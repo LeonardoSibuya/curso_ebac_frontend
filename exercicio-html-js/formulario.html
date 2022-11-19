@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+
+    <form>
+        <label for="campa">Campo A:</label>
+        <input type="number" id="campa">
+        <br>
+        <label for="campb">Campo B:</label>
+        <input type="number" id="campb">
+        <br>
+        <input type="button" value="Validar" id="botao" onclick="validar()">
+    </form>
+
+    <div id="res"></div>
+
+    <div id="formvalido"></div>
+
+    <div id="val">
+        <p>Formulário validado</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
