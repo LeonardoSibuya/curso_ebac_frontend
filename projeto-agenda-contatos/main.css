@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color: #0c0a17;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    background-color: #4545f379;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #000;
+}
+
+form input{
+    text-align: center;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: bolder;
+    outline: none;
+    margin: 10px 5px 20px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px #000;
+}
+
+button {
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    background-color: #2626f7;
+    cursor: pointer;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px #000;
+    border: none;
+}
+
+button:hover {
+    background-color: #111184;
+}
+
+button:active {
+    background-color: #1a1abc;
+}
+
+table {
+    margin: 25px auto;
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+    border: 1px solid #fff;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px #000;
+}
+
+table caption {
+    margin-bottom: 15px;
+}
+
+thead th {
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #202020;
+}
+
+tbody td {
+    padding: 5px;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #686868;
+}
+
+#n-erro {
+    margin: auto;
+    padding: 6px;
+    background-color: #ff0000;
+    border-radius: 20px;
+    border: 1px dashed #ffffff;
+    width: 40%;
+    display: none;
+}
+
+#success {
+    margin: auto;
+    padding: 6px;
+    background-color: #039805;
+    border-radius: 20px;
+    width: 40%;
+    display: none;
+}
