@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ficha de cadastro</h1>
+        <p>Por favor, preencha seus dados para completar o cadastro</p>
+    </header>
+    <div class="container">
+        <div class="imagem">
+        </div>
+        <div class="conteudo">
+            <form id="formulario">
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" class="valor">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="valor">
+
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" class="valor">
+
+                <label for="cpf">CPF:</label>
+                <input name="cpf" id="cpf" class="valor">
+
+                <label for="adress">Endereço completo:</label>
+                <input type="text" name="adress" id="adress" class="valor">
+
+                <label for="cep">CEP:</label>
+                <input name="cep" id="cep" class="valor">
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>r
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    background-color: #e7d6d6;
+}
+
+header {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 15px 10px 0px #a18b8b;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Bungee Shade', cursive
+}
+
+header h1, p {
+    padding: 0px;
+    text-shadow: 0px 1px 1px #000000b0;
+    color: #635252;
+}
+
+header p {
+    padding-bottom: 0px;
+    font-style: italic;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    max-width: 1000px;
+    border-radius: 0px 0px 200px 0px;
+    box-shadow: 15px 10px 0px #a18b8b;
+}
+
+.imagem {
+    background-image: url(images/ebac.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 30px 20px 5px;
+    width: 50%;
+    height: 500px;
+    display: block;
+}
+
+.conteudo {
+    display: block;
+    width: 50%;
+    margin-top: 90px;
+}
+
+form {
+    width: 50%;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+    padding: 6px;
+    box-shadow: 1px 1px 2px #00000057;
+    border: 1px solid #00000057;
+    border-radius: 0px 20px 20px 0px;
+    outline: none;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0px 1px 1px #000000be;
+    color: #635252;
+}
+
+form button {
+    margin: 13px 80px;
+    padding: 8px;
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #635252;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a08484;
+    color: #fff;
+}
+
+.sucesso {
+    color: #04f004;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 50px;
+}
