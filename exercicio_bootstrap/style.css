@@ -1,0 +1,37 @@
+body {
+    background-color: #c1cbe7;
+}
+
+.container {
+    background-image: linear-gradient(to top, #1d1d5a, #31D2F2);
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 26px;
+    width: 60%;
+    box-shadow: -1px -2px 10px #38d4f3;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 2.5em;
+}
+
+h1,
+.form-label {
+    text-shadow: 1px 1px 1px black;
+}
+
+form {
+    width: 50%;
+}
+
+form,
+.form-label {
+    margin: 16px auto;
+}
+
+button {
+    margin-top: 20px;
+}
