@@ -1,0 +1,1 @@
+function testeSomar(e,t){return e+t}module.exports=testeSomar;

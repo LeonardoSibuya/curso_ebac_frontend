@@ -1,0 +1,18 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$corPrincipal;
+}
+
+.container {
+    max-width: 80%;
+    background-color: variaveis.$corSecundaria;
+
+    .testImg{
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
