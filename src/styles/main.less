@@ -1,0 +1,121 @@
+@import "maps.less";
+@import "reset.less";
+@import "variaveis.less";
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)";
+
+.borderRadius(@bRadius: 16px) {
+    border-radius: @bRadius;
+}
+
+.paddingLess(@padding: 16px 0){
+    padding: @padding;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.textDecoration {
+    text-decoration: none;
+}
+
+body {
+    background-color: #colors[corBody];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #colors[corCabecalho];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        .displayFlex;
+        justify-content: space-between;
+        align-items: center;
+        .paddingLess();
+    }
+}
+
+.menu {
+    .displayFlex;
+
+    & li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        & a {
+            color: #colors[corLetraBotao];
+            .textDecoration;
+        }
+    }
+}
+
+section {
+    .paddingLess(56px 0);
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    .borderRadius()
+}
+
+.product-button {
+    display: block;
+    background-color: #colors[corBotao];
+    color: #colors[corLetraBotao];
+    text-align: center;
+    .paddingLess(8px 0);
+    .borderRadius(8px);
+    margin-top: 8px;
+    .textDecoration;
+
+    &:hover {
+        background-color: #colors[corBotaoHover];
+    }
+}
+
+@media @breakpointMobile {
+    .container {
+        max-width: 70%;
+    }
+
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
+
+@media @breakpointTablet {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
