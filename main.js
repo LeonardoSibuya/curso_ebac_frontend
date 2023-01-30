@@ -3,24 +3,29 @@
 function VideoGame(modelo, fabricante, jogo, joystick, precoAtual) {
     this.modelo = modelo;
     this.fabricante = fabricante;
-    
-    Jogos.call(this, jogo);
-    Acessorio.call(this, joystick);
-    Price.call(this, precoAtual);
+    this.jogo = jogo;
+    this.joystick = joystick;
+    this.precoAtual = precoAtual;
 }
 
 //Classes herdeiras:
 
 function Jogos(jogo) {
     this.jogo = jogo;
+
+    VideoGame.call(this, jogo)
 }
 
 function Acessorio(joystick) {
     this.joystick = joystick;
+
+    VideoGame.call(this, joystick)
 }
 
 function Price(precoAtual) {
     this.precoAtual = precoAtual;
+
+    VideoGame.call(this, precoAtual)
 }
 
 //Instâncias de objetos
